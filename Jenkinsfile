@@ -9,7 +9,7 @@ pipeline {
     
    stage('clone the maven project'){
      steps {
-       git 'https://gitlab.com/47billion/nextgenproduct/documentunderstanding/testing/apisanity.git'
+       git 'https://github.com/neillfontes/karate-sample.git'
      }
    }
        stage('run image') {
