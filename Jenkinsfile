@@ -1,12 +1,7 @@
 pipeline {
   agent any
  stages {
-   stage('cloning git'){
-     steps{   
-     git 'https://github.com/saurabhgore-code/47billion-karate-docker.git'
-     }
-   }
-       stage('Building Image') {
+    stage('Building Image') {
          steps{
              sh 'docker build -t karate-docker /home/billion/karate-sample'
          }
