@@ -13,9 +13,9 @@ pipeline {
        git 'https://gitlab.com/47billion/nextgenproduct/documentunderstanding/testing/apisanity.git'
      }
    }
-       stage('run test cases') {
+       stage('run image') {
          steps {  
-           sh 'mvn clean install -Dtest=UsersRunner'
+           sh 'docker run -ti karate-docker mvn clean install -Dtest=UsersRunner'
                }
        }
 
