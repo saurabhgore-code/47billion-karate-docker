@@ -1,8 +1,7 @@
 pipeline {
   agent any
  stages {
-   
-   stage('clone the folder'){
+   stage('cloning git'){
      steps{   
      git 'https://github.com/saurabhgore-code/47billion-karate-docker.git'
      }
